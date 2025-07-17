@@ -1,6 +1,7 @@
 #!/bin/bash/python3
 
-h = 2
-s = h*60**2
+hours = 2
 
-print(f"{h} hour (s) is {s} seconds.")
+seconds = hours * 60 * 60
+
+print(f"{hours} hour (s) is {seconds} seconds.")
