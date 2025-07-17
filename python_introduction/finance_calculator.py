@@ -1,16 +1,15 @@
 #!/bin/bash/python3
 
-i = int(input("Enter your monthly income: "))
-e = int(input("Enter your total monthly expenses: "))
+monthly_income = int(input("Enter your monthly income: "))
+monthly_expenses = int(input("Enter your total monthly expenses: "))
 
 #Calculate Monthly Savings
-s = i-e
+monthly_savings = monthly_income-monthly_expenses
 
-print(f"Your monthly savings are ${s}")
+print(f"Your monthly savings are ${monthly_savings}")
 
 #Project Annual Savings:
-i = 0.05
 
-ps = s*12+(s*12*i)
+ps = monthly_savings * 12 + (monthly_savings * 12 * 0.005)
 
 print(f"Projected savings after one year, with interest, is: ${ps}")
