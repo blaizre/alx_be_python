@@ -1,13 +1,13 @@
 #!/bin/bash/python3
 
-task = input("Enter your task: ")
-priority = input("(high/medium/low): ")
-time = input("Is it time-bound? (yes/no): ")
+Task = input("Enter your task: ")
+Priority = input("(high/medium/low): ")
+Time_Bound = input("Is it time-bound? (yes/no): ")
 
-match priority:
+match Priority:
     case "high":
-        if time == "yes":
-            print(f"Reminder: {task} is a {priority} priority task that requires immediate action today!")
+        if Time_Bound == "yes":
+            print(f"Reminder: {Task} is a {Priority} priority task that requires immediate action today!")
     case "low":
-        if time == "no":
-            print(f"Reminder: {task} is a {priority} priority task. Consider completing it when you have free time.")
+        if Time_Bound == "no":
+            print(f"Reminder: {Task} is a {Priority} priority task. Consider completing it when you have free time.")
