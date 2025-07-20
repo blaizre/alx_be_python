@@ -1,9 +1,12 @@
 #!/bin/bash/python3
 
-pattern = int(input("Enter the size of the pattern: "))
+size = int(input("Enter the size of the pattern: "))
 
-while pattern >= 0:
-    pattern +=1
-    for i in pattern:
+# Initialize row counter
+row = 0
+
+while row < size:
+    for _ in range(size):
         print("*", end="")
-        print("\n")
+    print()
+    row += 1
